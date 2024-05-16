@@ -7,44 +7,63 @@
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
+
   <body>
+    <!-- Para estructurar el HTML se usarán las siguientes etiquetas semánticas:
+
+    main
+    header
+    nav
+    section
+    article
+    aside-->
+
+    <!-- Este proyecto tendrá 4 secciones contenidas dentro de un contenedor main -->
+    -->
+
     <main>
-      <header>
-        <a href=""
-          ><img src="/img/youtube.png" alt="Logo de página" />Carlos Binker
-          Grupo 15</a
-        >
-      </header>
+      <!-- Lo primero que tenemos en nuestra one page es un HEADER -->
 
-      <div></div>
+      <header>DESARROLAR UN LOGO (puede ser un enlace a otra página)</header>
 
-      <!-- Barra de navegación correspondiente al header -->
+      <!-- Ahora viene una barra de navegación donde cada enlace nos llevará a otra página o a otra sección de esta misma página (esquema one page) -->
+
       <nav>
         <a href="">Inicio</a>
         <a href="">Quiénes somos</a>
-        <a href="">Cruceros</a>
-        <a href="">Paquetes</a>
+        <a href="">0 KM</a>
+        <a href="">Usados</a>
         <a href="">Contacto</a>
       </nav>
 
-      <!-- SECCIÓN 1 -- BANNER -->
+      <!-- SECCIÓN 1 -- BANNER de la Agencia de autos-->
 
       <section>
-        <h1>Agencia de viajes online</h1>
-        <h2>Venta de paquetes y cruceros en todo el mundo</h2>
+        <!-- Título principal y secunadrio, ojo h1 no se repite sí los otros de h2 a h6 -->
 
-        <!-- La foto de bacground se configura en el CSS -->
+        <h1>Definir título principal de la Agencia de coches</h1>
+        <h2>Título secundario acerca de la agencia bla bla bla (Lorem)</h2>
 
-        <a href="">Reserve ya</a>
+        <!-- Acá va una foto de bacground que se configura en el CSS (ver videos que pasé)-->
+
+        <!-- El siguiente botón puede ser opcional -->
+
+        <a href=""
+          >Reserve ya su 0KM (esto sería un botón con un link opcional)</a
+        >
       </section>
 
-      <!-- SECCION 2 -->
+      <!-- FIN sección 1 -->
+
+      <!-- SECCION 2 es la sección ¿QUIÉNES SOMOS?, se debe llegar a esta parte con un link definido más arriva en el nav; acá se utiliza un article y un aside dentro de la section-->
 
       <section>
-        <!-- En el artículo vamos a hacer una descripción general de nuestros servicios -->
+        <!-- En el article hacemos una descripción general de nuestros servicios -->
 
         <article>
-          <!-- Primer div títulos -->
+          <!-- Acá el article tiene 3 cajas, que las representamos con 3 div -->
+
+          <!-- Primer div títulos, va un título principal y un secundario con un lorem o ya con el texto real -->
 
           <div>
             <h2>Nuestros servicios</h2>
@@ -54,13 +73,17 @@
             </h3>
           </div>
 
-          <!-- Segundo div una imagen -->
+          <!-- Segundo div una imagen alusiva de la Agencia de autos-->
 
           <div>
-            <img src="/img/02_Nuestros servicios.jpg" alt="" />
+            <img
+              src="#"
+              alt="Acá va imagen alusiva sobre la agencia de autos"
+            />
           </div>
 
           <!-- Tercer div un párrafo alusivo a la presentación de nuestros servicios -->
+          <!-- El párrafo conviene ponerlo dentro de un div para un mejor control luego con css -->
 
           <div>
             <p>
@@ -75,46 +98,52 @@
           </div>
         </article>
 
-        <!-- En el aside vamos a dar una breve síntesis complementaria de los servicios paquetes y cruceros -->
+        <!-- Fin del article -->
+
+        <!-- En el aside vamos a dar una breve síntesis complementaria de los servicios de autos 0KM y de usados -->
 
         <aside>
-          <!-- Una caja para el título principal -->
+          <!-- Una caja para el título principal con un div-->
 
           <div>
-            <h3>Sobre nuestros paquetes y cruceros</h3>
+            <h3>Acerca de nuestros autos 0KM y usados</h3>
           </div>
 
-          <!-- Para tener un mejor control ponemos a cada imagen en un div y luego al título y al párrafo en otro div -->
+          <!-- Para tener un mejor control ponemos a cada imagen en un div y al título secundario y al párrafo en otro div, como antes se usó h3 ahora se usa h4 -->
 
           <div>
-            <img src="/img/03_ship-105596_1920.jpg" alt="Foto de crucero" />
+            <img src="" alt="Foto de 0 0KM" />
           </div>
 
           <div>
-            <h4>CRUCEROS</h4>
+            <h4>Características de nuestros 0 KM(por ejemplo)</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Voluptatibus autem, sequi molestias saepe repellat hic ex expedita
-              delectus amet cum.
+              delectus amet cum. <b>CHAMULLO DE 0KM VA ACÁ !!</b>
             </p>
           </div>
 
+          <!-- Repetimos los mismos 2 div anteriores pero ahora para autos usados -->
+
           <div>
-            <img src="/img/04_Mchu Pichu_friends-749571_1920.jpg" alt="" />
+            <img src="" alt="Foto de auto usado" />
           </div>
 
           <div>
-            <h4>PAQUETES</h4>
+            <h4>Características de nuestros autos usados(por ejemplo)</h4>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Voluptatibus autem, sequi molestias saepe repellat hic ex expedita
-              delectus amet cum.
+              delectus amet cum. <b>CHAMULLO DE AUTOS USADOS VA ACÁ !!</b>
             </p>
           </div>
         </aside>
       </section>
 
-      <!-- SECCION 3 -->
+      <!-- Fin sección 2 -->
+
+      <!-- SECCION 3. La estructura es la misma que la sección 2, posee un article y un aside principalmente. En el article iría primero una caja con su título principal y secundario, luego en otra caja va una tabla (esto a a servirnos para la segunda parte del back end, entonces la dejamos ya preparada y podrían ir datos de coches provenientes de una BD), y después sigue otra caja que contendrá  un título y otra caja donde van las imágenes de las redes sociales. Luego en el aside colocaremos un iframe y el formulario de contacto en otras dos cajas-->
 
       <section>
         <article>
@@ -126,7 +155,7 @@
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Perspiciatis, amet vitae veritatis eius harum aut itaque porro?
-                Iure, ea dolorem.
+                Iure, ea dolorem. <b>CHAMULLO </b>
               </p>
             </h3>
           </div>
@@ -135,29 +164,70 @@
 
           <div>
             <table>
+              <!-- Encabezado de la tabla -->
               <tr>
                 <th>Marca</th>
                 <th>Modelo</th>
                 <th>Año</th>
                 <th>Precio</th>
+                <th>Color</th>
               </tr>
-              <row></row>
-              <row></row>
-              <row></row>
-              <row></row>
+              <!-- Datos de la tabla -->
+
+              <tr>
+                <td>FIAT</td>
+                <td>Cronos</td>
+                <td>0 KM</td>
+                <td>18.700.000</td>
+                <td>Azul</td>
+              </tr>
+
+              <tr>
+                <td>Toyota</td>
+                <td>Corolla Cross</td>
+                <td>0 KM</td>
+                <td>38.700.000</td>
+                <td>Roja</td>
+              </tr>
+              <tr>
+                <td>Volkswagen</td>
+                <td>GOL</td>
+                <td>2014</td>
+                <td>7.500.000</td>
+                <td>Gris titanio</td>
+              </tr>
+              <tr>
+                <td>Ford</td>
+                <td>Focus</td>
+                <td>2020</td>
+                <td>17.000.000</td>
+                <td>Blanco</td>
+              </tr>
+              <tr>
+                <td>Renault</td>
+                <td>Clío</td>
+                <td>2018</td>
+                <td>8.900.000</td>
+                <td>Negro</td>
+              </tr>
             </table>
           </div>
 
+          <!-- Nueva caja con un título  y otro div para las redes sociales -->
+
           <div>
             <h3>Redes sociales</h3>
+
             <div>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
+              <img src="https://instagram.com/" alt="" />
+              <img src="https://youtube.com" alt="" />
+              <img src="https://facebook.com/" alt="" />
+              <img src="https://www.whatsapp.com/" alt="" />
             </div>
           </div>
         </article>
+
+        
 
         <aside></aside>
       </section>
