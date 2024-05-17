@@ -19,7 +19,6 @@
     aside-->
 
     <!-- Este proyecto tendrá 4 secciones contenidas dentro de un contenedor main -->
-    -->
 
     <main>
       <!-- Lo primero que tenemos en nuestra one page es un HEADER -->
@@ -213,27 +212,168 @@
             </table>
           </div>
 
-          <!-- Nueva caja con un título  y otro div para las redes sociales -->
+          <!-- Nueva caja con un título  y otro div para las imágenes de las redes sociales -->
 
           <div>
             <h3>Redes sociales</h3>
 
             <div>
-              <img src="https://instagram.com/" alt="" />
-              <img src="https://youtube.com" alt="" />
-              <img src="https://facebook.com/" alt="" />
-              <img src="https://www.whatsapp.com/" alt="" />
+              <img src="/img/instagram.png" alt="" />
+              <img src="/img/youtube.png" alt="" />
+              <img src="/img/facebook.png" alt="" />
+              <img src="/img/whatsapp.png" alt="" />
             </div>
           </div>
         </article>
 
-        
+        <aside>
+          <!-- Va un div para el mapa y otro para el formulario -->
 
-        <aside></aside>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7673990284748!2d-58.446427930642066!3d-34.584751630022836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb53c81cb9f07%3A0xa90b1e25f41b33b1!2sKANSAI%20-%20Sucursal%20Palermo!5e0!3m2!1ses-419!2sar!4v1715903796944!5m2!1ses-419!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div>
+            <h3>Formulario de contacto</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              dolorem sint ab itaque iusto tenetur ratione repellendus
+              voluptates aliquid! Porro atque voluptas id aut doloribus at
+              pariatur nihil consequuntur quas!
+            </p>
+
+            <!-- Comienza formulario -->
+
+            <form class="formulario">
+              <!-- Usamos el tag fielset que obra como un contenedor de todos los inputs, selectores, botones, etc. El tag legend da un título a este contenedor-->
+
+              <fieldset>
+                <legend>
+                  Contactános llenando todos los campos del formulario
+                </legend>
+                <br />
+
+                <div class="contenedor-campos">
+                  <!-- Ahora usamos un div para cada campo , esto es un input con su  correspondiente  label-->
+
+                  <div class="campo">
+                    <label>Nombre</label>
+                    <input
+                      class="input-text"
+                      type="text"
+                      placeholder="Tu Nombre"
+                    />
+                  </div>
+
+                  <br />
+
+                  <div class="campo">
+                    <label>Teléfono</label>
+                    <input
+                      class="input-text"
+                      type="tel"
+                      placeholder="Tu Teléfono"
+                    />
+                  </div>
+
+                  <br />
+
+                  <div class="campo">
+                    <label>Correo</label>
+                    <input
+                      class="input-text"
+                      type="email"
+                      placeholder="Tu Email"
+                    />
+                  </div>
+
+                  <br />
+
+                  <!-- Uso de un input radius  -->
+
+                  <label for="">Situación fiscal frente al IVA</label>
+                  <br /><br />
+
+                  <div style="margin-left: 50px">
+                    <input type="radio" name="estadofiscal" value="S" checked />
+                    <label for="">Responsable inscripto</label>
+                    <br />
+                    <input type="radio" name="estadofiscal" value="C" />
+                    <label for="">Consumidor final</label>
+                    <br />
+                    <input type="radio" name="estadofiscal" value="C" />
+                    <label for="">Sujeto excento</label>
+                    <br />
+                    <input type="radio" name="estadofiscal" value="D" />
+                    <label for="">No alzanzado</label>
+                    <br /><br />
+                  </div>
+
+                  <!-- Uso de un input checkbox  -->
+
+                  <div>
+                    <label for="mayor">Eres jubilado/a?</label>
+                    <input type="checkbox" id="mayor" name="mayor" />
+                  </div>
+
+                  <br />
+
+                  <!-- Uso de un Select  -->
+
+                  <div>
+                    <!-- <label for="nacionalidad">Cual es tu Nacionalidad?</label> -->
+                    <select id="nacionalidad" name="nacionalidad">
+                      <option value="" selected disabled>Nacionalidad</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Brasil">Brasil</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Chile">Chile</option>
+                      <option value="Otra">Otra</option>
+                    </select>
+                  </div>
+
+                  <br />
+
+                  <!-- textarea -->
+
+                  <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea class="input-text"></textarea>
+                  </div>
+                </div>
+
+                <br />
+
+                <div class="alinear-derecha flex">
+                  <input class="boton w-sm-100" type="submit" value="Enviar" />
+                </div>
+
+                <!-- .contenedor-campos -->
+              </fieldset>
+            </form>
+          </div>
+        </aside>
       </section>
 
+      <!-- Fin sección 3-->
+
       <!-- SECCION 4 --FOOTER -->
-      <section></section>
+
+      <section>
+        <nav></nav>
+        <section></section>
+        
+      </section>
     </main>
   </body>
 </html>
