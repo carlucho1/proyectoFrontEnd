@@ -1,141 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UM-Compatible" content="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agencia de cruceros online</title>
+    <title>🚗Agencia de Autos Los Shlepers🏁</title>
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
     <!-- Para estructurar el HTML se usarán las siguientes etiquetas semánticas:
-
     main
     header
     nav
     section
     article
-    aside-->
-
-    <!-- Este proyecto tendrá 4 secciones contenidas dentro de un contenedor main -->
-
-    <main>
+    //aside
+    Este proyecto tendrá 4 secciones contenidas dentro de un contenedor main
+    -->
+    <main class="main">
       <!-- Lo primero que tenemos en nuestra one page es un HEADER -->
 
-      <header>DESARROLAR UN LOGO (puede ser un enlace a otra página)</header>
+      <header class="cabecera">
+        <a href="" class="cabecera__link"><img src="img/Logo.jpg" alt="Logo" class="cabecera__img"> Agencia Los Shlepers🏁 </a>
+              </div>
+          </header>
+      </header>
 
       <!-- Ahora viene una barra de navegación donde cada enlace nos llevará a otra página o a otra sección de esta misma página (esquema one page) -->
 
-      <nav>
+      <nav class="navegacion">
         <a href="">Inicio</a>
         <a href="">Quiénes somos</a>
         <a href="">0 KM</a>
-        <a href="">Usados</a>
+        <a href="Usados.html">Usados</a>
         <a href="">Contacto</a>
       </nav>
 
       <!-- SECCIÓN 1 -- BANNER de la Agencia de autos-->
 
-      <section>
+      <section class="banner">
         <!-- Título principal y secunadrio, ojo h1 no se repite sí los otros de h2 a h6 -->
 
-        <h1>Definir título principal de la Agencia de coches</h1>
-        <h2>Título secundario acerca de la agencia bla bla bla (Lorem)</h2>
+        <h1>Agencia Los Shlepers🏁</h1>
+        <h2>Te ayudamos a conseguir tu vehiculo soñado, con cualquier presupuesto</h2>
 
         <!-- Acá va una foto de bacground que se configura en el CSS (ver videos que pasé)-->
 
         <!-- El siguiente botón puede ser opcional -->
 
-        <a href=""
-          >Reserve ya su 0KM (esto sería un botón con un link opcional)</a
-        >
+        <a href="">Saber Más</a>
       </section>
 
       <!-- FIN sección 1 -->
 
       <!-- SECCION 2 es la sección ¿QUIÉNES SOMOS?, se debe llegar a esta parte con un link definido más arriva en el nav; acá se utiliza un article y un aside dentro de la section-->
 
-      <section>
+      <section  class="seccion-2">
         <!-- En el article hacemos una descripción general de nuestros servicios -->
 
-        <article>
+        <article class="bloque-izq">
           <!-- Acá el article tiene 3 cajas, que las representamos con 3 div -->
 
           <!-- Primer div títulos, va un título principal y un secundario con un lorem o ya con el texto real -->
 
-          <div>
+          <div class="izq-titulo">
             <h2>Nuestros servicios</h2>
             <h3>
-              Lorem ipsum dolor sit amet Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Quaerat, qui.
+              Necesitas vender tu auto? Queres comprar el mejor usado? Nosotros te ayudamos
+            </h3>
+            <h3>
+              Te asesoramos y acompañamos durante todo el proceso de obtencion de tu 0km
             </h3>
           </div>
 
           <!-- Segundo div una imagen alusiva de la Agencia de autos-->
 
-          <div>
-            <img
-              src="#"
-              alt="Acá va imagen alusiva sobre la agencia de autos"
-            />
+          <div class="izq-img">
+            <img src="https://i0.wp.com/www.wynnslocksmiths.com.au/wp-content/uploads/2019/12/autokeys.jpg?fit=750%2C500&ssl=1"alt="Acá va imagen alusiva sobre la agencia de autos"/>
           </div>
 
           <!-- Tercer div un párrafo alusivo a la presentación de nuestros servicios -->
           <!-- El párrafo conviene ponerlo dentro de un div para un mejor control luego con css -->
-
-          <div>
-            <p>
-              <span>Lorem, ipsum</span> dolor sit amet consectetur adipisicing
-              elit. Repellendus voluptatem necessitatibus perspiciatis. Esse
-              mollitia maxime, veritatis id quae quidem suscipit nemo
-              consequuntur eum? Labore nulla amet et nobis unde, ipsam minus
-              error quod. Rem dicta sunt architecto inventore quibusdam nisi,
-              mollitia, porro, voluptatibus illum iure quae! Minima nulla quam
-              totam.
+         
+            <p class="izq-parrafo">
+              Con nuestro equipo de profesionales, tenes la seguridad que que siempre te vas a llevar lo mejor.
+              Desde 1980 sólo clientes felices
             </p>
-          </div>
+          
         </article>
 
         <!-- Fin del article -->
 
         <!-- En el aside vamos a dar una breve síntesis complementaria de los servicios de autos 0KM y de usados -->
 
-        <aside>
+        <aside class="bloque-der">
           <!-- Una caja para el título principal con un div-->
 
-          <div>
+          <div class="der-titulo">
             <h3>Acerca de nuestros autos 0KM y usados</h3>
           </div>
 
           <!-- Para tener un mejor control ponemos a cada imagen en un div y al título secundario y al párrafo en otro div, como antes se usó h3 ahora se usa h4 -->
 
-          <div>
-            <img src="" alt="Foto de 0 0KM" />
+          <div class="der-noticias">
+            <div class="noticias-img">
+            <img src="https://img.remediosdigitales.com/ab3010/suzuki-grand-vitara1/1366_2000.jpeg" alt="Foto de 0 0KM" />
           </div>
 
-          <div>
-            <h4>Características de nuestros 0 KM(por ejemplo)</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatibus autem, sequi molestias saepe repellat hic ex expedita
-              delectus amet cum. <b>CHAMULLO DE 0KM VA ACÁ !!</b>
-            </p>
+          <div class="noticias-textos">
+            <h4>Asesoramiento para obtencion de 0km</h4>
+            <p>Te ayudamos desde la elección del modelo, hasta el momento del patentamiento y de la entrega, gestión de documentación y te acompañamos en el proceso de los tramites legales posteriores a la entrega</p>
           </div>
 
           <!-- Repetimos los mismos 2 div anteriores pero ahora para autos usados -->
-
-          <div>
-            <img src="" alt="Foto de auto usado" />
+          </div>
+          <div class="der-noticias">
+            <div class="noticias-img">
+            <img src="https://img.olx.com.br/images/47/473439397707365.jpg" alt="Foto de auto usado" />
           </div>
 
-          <div>
-            <h4>Características de nuestros autos usados(por ejemplo)</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatibus autem, sequi molestias saepe repellat hic ex expedita
-              delectus amet cum. <b>CHAMULLO DE AUTOS USADOS VA ACÁ !!</b>
-            </p>
+          <div class="noticias-textos">
+            <h4>Flota de autos usados</h4>
+            <p>Ofrecemos una amplia gama de vehiculos usados, de todo tipo y para cualquier presupuesto
+              Ofrecemos tambien planes de financiación</p>
+          </div>
           </div>
         </aside>
       </section>
@@ -144,11 +134,11 @@
 
       <!-- SECCION 3. La estructura es la misma que la sección 2, posee un article y un aside principalmente. En el article iría primero una caja con su título principal y secundario, luego en otra caja va una tabla (esto a a servirnos para la segunda parte del back end, entonces la dejamos ya preparada y podrían ir datos de coches provenientes de una BD), y después sigue otra caja que contendrá  un título y otra caja donde van las imágenes de las redes sociales. Luego en el aside colocaremos un iframe y el formulario de contacto en otras dos cajas-->
 
-      <section>
-        <article>
+      <section class="section3">
+        <article class="section3Article">
           <!-- div de títulos -->
 
-          <div>
+          <div class="section3ArticleTitle">
             <h2>autos 0 KM y usados destacados</h2>
             <h3>
               <p>
@@ -161,63 +151,63 @@
 
           <!-- Tabla dentro de otro div -->
 
-          <div>
-            <table>
+          <div class="section3ArticleTable">
+            <table class="tabla">
               <!-- Encabezado de la tabla -->
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Año</th>
-                <th>Precio</th>
-                <th>Color</th>
+              <tr class="fila-header">
+                <th class="columna">Marca</th>
+                <th class="columna">Modelo</th>
+                <th class="columna">Año</th>
+                <th class="columna">Precio</th>
+                <th class="columna">Color</th>
               </tr>
               <!-- Datos de la tabla -->
 
-              <tr>
-                <td>FIAT</td>
-                <td>Cronos</td>
-                <td>0 KM</td>
-                <td>18.700.000</td>
-                <td>Azul</td>
+              <tr class="fila">
+                <td class="columna">FIAT</td>
+                <td class="columna">Cronos</td>
+                <td class="columna">0 KM</td>
+                <td class="columna">18.700.000</td>
+                <td class="columna">Azul</td>
               </tr>
 
-              <tr>
-                <td>Toyota</td>
-                <td>Corolla Cross</td>
-                <td>0 KM</td>
-                <td>38.700.000</td>
-                <td>Roja</td>
+              <tr class="fila">
+                <td class="columna">Toyota</td>
+                <td class="columna">Corolla Cross</td>
+                <td class="columna">0 KM</td>
+                <td class="columna">38.700.000</td>
+                <td class="columna">Roja</td>
               </tr>
-              <tr>
-                <td>Volkswagen</td>
-                <td>GOL</td>
-                <td>2014</td>
-                <td>7.500.000</td>
-                <td>Gris titanio</td>
+              <tr class="fila">
+                <td class="columna">Volkswagen</td>
+                <td class="columna">GOL</td>
+                <td class="columna">2014</td>
+                <td class="columna">7.500.000</td>
+                <td class="columna">Gris titanio</td>
               </tr>
-              <tr>
-                <td>Ford</td>
-                <td>Focus</td>
-                <td>2020</td>
-                <td>17.000.000</td>
-                <td>Blanco</td>
+              <tr class="fila">
+                <td class="columna">Ford</td>
+                <td class="columna">Focus</td>
+                <td class="columna">2020</td>
+                <td class="columna">17.000.000</td>
+                <td class="columna">Blanco</td>
               </tr>
-              <tr>
-                <td>Renault</td>
-                <td>Clío</td>
-                <td>2018</td>
-                <td>8.900.000</td>
-                <td>Negro</td>
+              <tr class="fila">
+                <td class="columna">Renault</td>
+                <td class="columna">Clío</td>
+                <td class="columna">2018</td>
+                <td class="columna">8.900.000</td>
+                <td class="columna">Negro</td>
               </tr>
             </table>
           </div>
 
           <!-- Nueva caja con un título  y otro div para las imágenes de las redes sociales -->
 
-          <div>
+          <div class="section3ArticleRedesSociales">
             <h3>Redes sociales</h3>
 
-            <div>
+            <div class="imgRedesSociales">
               <img src="/img/instagram.png" alt="" />
               <img src="/img/youtube.png" alt="" />
               <img src="/img/facebook.png" alt="" />
@@ -226,10 +216,10 @@
           </div>
         </article>
 
-        <aside>
+        <aside class="section3Aside">
           <!-- Va un div para el mapa y otro para el formulario -->
 
-          <div>
+          <div class="mapa">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7673990284748!2d-58.446427930642066!3d-34.584751630022836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb53c81cb9f07%3A0xa90b1e25f41b33b1!2sKANSAI%20-%20Sucursal%20Palermo!5e0!3m2!1ses-419!2sar!4v1715903796944!5m2!1ses-419!2sar"
               width="400"
@@ -241,7 +231,7 @@
             ></iframe>
           </div>
 
-          <div>
+          <div class="formulario-div">
             <h3>Formulario de contacto</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -255,7 +245,7 @@
             <form class="formulario">
               <!-- Usamos el tag fielset que obra como un contenedor de todos los inputs, selectores, botones, etc. El tag legend da un título a este contenedor-->
 
-              <fieldset>
+              <fieldset class="fieldset">
                 <legend>
                   Contactános llenando todos los campos del formulario
                 </legend>
@@ -299,10 +289,9 @@
 
                   <!-- Uso de un input radius  -->
 
-                  <label for="">Situación fiscal frente al IVA</label>
-                  <br /><br />
-
-                  <div style="margin-left: 50px">
+                  <div class="input-radio-checbox">
+                    <label for="">Situación fiscal frente al IVA</label>
+                    <br /><br />
                     <input type="radio" name="estadofiscal" value="S" checked />
                     <label for="">Responsable inscripto</label>
                     <br />
@@ -314,13 +303,11 @@
                     <br />
                     <input type="radio" name="estadofiscal" value="D" />
                     <label for="">No alzanzado</label>
+
                     <br /><br />
-                  </div>
 
-                  <!-- Uso de un input checkbox  -->
-
-                  <div>
-                    <label for="mayor">Eres jubilado/a?</label>
+                    <!-- Uso de un input checkbox  -->
+                    <label for="mayor">Jubilado/a</label>
                     <input type="checkbox" id="mayor" name="mayor" />
                   </div>
 
@@ -328,7 +315,7 @@
 
                   <!-- Uso de un Select  -->
 
-                  <div>
+                  <div class="select">
                     <!-- <label for="nacionalidad">Cual es tu Nacionalidad?</label> -->
                     <select id="nacionalidad" name="nacionalidad">
                       <option value="" selected disabled>Nacionalidad</option>
@@ -369,7 +356,7 @@
 
       <!-- SECCION 4 --FOOTER -->
 
-      <section>
+      <section class="section4">
         <nav>
           <a href="">Inicio</a>
           <a href="">Quiénes somos</a>
@@ -409,7 +396,7 @@
         </div>
       </section>
 
-      <br>
+      <br />
 
       <!-- Comienza footer -->
 
@@ -417,6 +404,8 @@
         &copy;<a href="">Carlos Binker and David Altmar</a>
         <p>Todos los derechos reservados</p>
       </footer>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </main>
   </body>
 </html>
