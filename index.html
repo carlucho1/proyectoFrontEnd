@@ -134,11 +134,13 @@
 
       <!-- SECCION 3. La estructura es la misma que la sección 2, posee un article y un aside principalmente. En el article iría primero una caja con su título principal y secundario, luego en otra caja va una tabla (esto a a servirnos para la segunda parte del back end, entonces la dejamos ya preparada y podrían ir datos de coches provenientes de una BD), y después sigue otra caja que contendrá  un título y otra caja donde van las imágenes de las redes sociales. Luego en el aside colocaremos un iframe y el formulario de contacto en otras dos cajas-->
 
-      <section class="section3">
-        <article class="section3Article">
+      <section class="seccion-3">
+
+        <article class="article">
+
           <!-- div de títulos -->
 
-          <div class="section3ArticleTitle">
+          <div class="tabla-titulo">
             <h2>autos 0 KM y usados destacados</h2>
             <h3>
               <p>
@@ -151,19 +153,22 @@
 
           <!-- Tabla dentro de otro div -->
 
-          <div class="section3ArticleTable">
+          <div class="tabla-div">
+
             <table class="tabla">
+
               <!-- Encabezado de la tabla -->
-              <tr class="fila-header">
+              <tr class="fila-encabezado">
                 <th class="columna">Marca</th>
                 <th class="columna">Modelo</th>
                 <th class="columna">Año</th>
                 <th class="columna">Precio</th>
                 <th class="columna">Color</th>
               </tr>
+
               <!-- Datos de la tabla -->
 
-              <tr class="fila">
+              <tr class="fila-dato">
                 <td class="columna">FIAT</td>
                 <td class="columna">Cronos</td>
                 <td class="columna">0 KM</td>
@@ -171,28 +176,28 @@
                 <td class="columna">Azul</td>
               </tr>
 
-              <tr class="fila">
+              <tr class="fila-dato">
                 <td class="columna">Toyota</td>
                 <td class="columna">Corolla Cross</td>
                 <td class="columna">0 KM</td>
                 <td class="columna">38.700.000</td>
                 <td class="columna">Roja</td>
               </tr>
-              <tr class="fila">
+              <tr class="fila-dato">
                 <td class="columna">Volkswagen</td>
                 <td class="columna">GOL</td>
                 <td class="columna">2014</td>
                 <td class="columna">7.500.000</td>
                 <td class="columna">Gris titanio</td>
               </tr>
-              <tr class="fila">
+              <tr class="fila-dato">
                 <td class="columna">Ford</td>
                 <td class="columna">Focus</td>
                 <td class="columna">2020</td>
                 <td class="columna">17.000.000</td>
                 <td class="columna">Blanco</td>
               </tr>
-              <tr class="fila">
+              <tr class="fila-dato">
                 <td class="columna">Renault</td>
                 <td class="columna">Clío</td>
                 <td class="columna">2018</td>
@@ -204,149 +209,48 @@
 
           <!-- Nueva caja con un título  y otro div para las imágenes de las redes sociales -->
 
-          <div class="section3ArticleRedesSociales">
-            <h3>Redes sociales</h3>
+          <div class="rs-div">
+            <h3>Seguinos en nuestras redes sociales</h3>
 
-            <div class="imgRedesSociales">
+            <div class="rs-img">
               <img src="/img/instagram.png" alt="" />
               <img src="/img/youtube.png" alt="" />
               <img src="/img/facebook.png" alt="" />
               <img src="/img/whatsapp.png" alt="" />
             </div>
           </div>
+
         </article>
 
-        <aside class="section3Aside">
+        <aside class="aside">
           <!-- Va un div para el mapa y otro para el formulario -->
 
           <div class="mapa">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7673990284748!2d-58.446427930642066!3d-34.584751630022836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb53c81cb9f07%3A0xa90b1e25f41b33b1!2sKANSAI%20-%20Sucursal%20Palermo!5e0!3m2!1ses-419!2sar!4v1715903796944!5m2!1ses-419!2sar"
-              width="400"
-              height="300"
-              style="border: 0"
               allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
 
-          <div class="formulario-div">
-            <h3>Formulario de contacto</h3>
+          <class="form-div">
+
+            <h3>Contactate con Nosotros</h3>
+
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               dolorem sint ab itaque iusto tenetur ratione repellendus
-              voluptates aliquid! Porro atque voluptas id aut doloribus at
-              pariatur nihil consequuntur quas!
             </p>
+            <br>
 
             <!-- Comienza formulario -->
-
-            <form class="formulario">
-              <!-- Usamos el tag fielset que obra como un contenedor de todos los inputs, selectores, botones, etc. El tag legend da un título a este contenedor-->
-
-              <fieldset class="fieldset">
-                <legend>
-                  Contactános llenando todos los campos del formulario
-                </legend>
-                <br />
-
-                <div class="contenedor-campos">
-                  <!-- Ahora usamos un div para cada campo , esto es un input con su  correspondiente  label-->
-
-                  <div class="campo">
-                    <label>Nombre</label>
-                    <input
-                      class="input-text"
-                      type="text"
-                      placeholder="Tu Nombre"
-                    />
-                  </div>
-
-                  <br />
-
-                  <div class="campo">
-                    <label>Teléfono</label>
-                    <input
-                      class="input-text"
-                      type="tel"
-                      placeholder="Tu Teléfono"
-                    />
-                  </div>
-
-                  <br />
-
-                  <div class="campo">
-                    <label>Correo</label>
-                    <input
-                      class="input-text"
-                      type="email"
-                      placeholder="Tu Email"
-                    />
-                  </div>
-
-                  <br />
-
-                  <!-- Uso de un input radius  -->
-
-                  <div class="input-radio-checbox">
-                    <label for="">Situación fiscal frente al IVA</label>
-                    <br /><br />
-                    <input type="radio" name="estadofiscal" value="S" checked />
-                    <label for="">Responsable inscripto</label>
-                    <br />
-                    <input type="radio" name="estadofiscal" value="C" />
-                    <label for="">Consumidor final</label>
-                    <br />
-                    <input type="radio" name="estadofiscal" value="C" />
-                    <label for="">Sujeto excento</label>
-                    <br />
-                    <input type="radio" name="estadofiscal" value="D" />
-                    <label for="">No alzanzado</label>
-
-                    <br /><br />
-
-                    <!-- Uso de un input checkbox  -->
-                    <label for="mayor">Jubilado/a</label>
-                    <input type="checkbox" id="mayor" name="mayor" />
-                  </div>
-
-                  <br />
-
-                  <!-- Uso de un Select  -->
-
-                  <div class="select">
-                    <!-- <label for="nacionalidad">Cual es tu Nacionalidad?</label> -->
-                    <select id="nacionalidad" name="nacionalidad">
-                      <option value="" selected disabled>Nacionalidad</option>
-                      <option value="Argentina">Argentina</option>
-                      <option value="Uruguay">Uruguay</option>
-                      <option value="Paraguay">Paraguay</option>
-                      <option value="Brasil">Brasil</option>
-                      <option value="Bolivia">Bolivia</option>
-                      <option value="Chile">Chile</option>
-                      <option value="Otra">Otra</option>
-                    </select>
-                  </div>
-
-                  <br />
-
-                  <!-- textarea -->
-
-                  <div class="campo">
-                    <label>Mensaje</label>
-                    <textarea class="input-text"></textarea>
-                  </div>
-                </div>
-
-                <br />
-
-                <div class="alinear-derecha flex">
-                  <input class="boton w-sm-100" type="submit" value="Enviar" />
-                </div>
-
-                <!-- .contenedor-campos -->
-              </fieldset>
+            <form action="" class="formulario">
+                <input class="input" type="text" placeholder="Nombre y Apellido">
+                <input class="input" type="email" placeholder="Correo electrónico">
+                <input class="input" type="tel" placeholder="Teléfono">
+                <textarea class="textarea" name="" id="" cols="30" rows="5" placeholder="Mensaje"  style="resize: both"></textarea>
+                <input class="submit" type="submit" value="Enviar">
             </form>
           </div>
         </aside>
