@@ -5,7 +5,7 @@
     <meta http-equiv="X-UM-Compatible" content="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🚗Agencia de Autos Los Shlepers🏁</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 
@@ -30,14 +30,28 @@
       </header>
 
       <!-- Ahora viene una barra de navegación donde cada enlace nos llevará a otra página o a otra sección de esta misma página (esquema one page) -->
-
-      <nav class="navegacion">
-        <a href="">Inicio</a>
-        <a href="#nosotros">Quiénes somos</a>
-        <a href="">0 KM</a>
-        <a href="usados.html">Usados</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+      <div class="navegacion" id="mynavegacion">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#QuienesSomos">Quienes Somos</a>
+        <a href="#contact">0 Kilometro</a>
+        <a href="Usados.html">Usados</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>   
+    
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("mynavegacion");
+        if (x.className === "navegacion") {
+          x.className += " responsive";
+        } else {
+          x.className = "navegacion";
+        }
+      }
+      </script>
 
       <!-- SECCIÓN 1 -- BANNER de la Agencia de autos-->
 
