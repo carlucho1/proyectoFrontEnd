@@ -23,18 +23,16 @@
     <main class="main">
       <!-- Lo primero que tenemos en nuestra one page es un HEADER -->
 
-      <header class="cabecera">
-        <a href="" class="cabecera__link"><img src="img/Logo.jpg" alt="Logo" class="cabecera__img">Agencia Los Shlepers🏁 </a>
-              </div>
-          </header>
-      </header>
+        <header class="cabecera">
+            <a href="" class="cabecera__link"><img src="img/Logo.jpg" alt="Logo" class="cabecera__img">Agencia Los Shlepers🏁 </a>           
+        </header>
 
       <!-- Ahora viene una barra de navegación donde cada enlace nos llevará a otra página o a otra sección de esta misma página (esquema one page) -->
 
       <nav class="navegacion">
         <a href="">Inicio</a>
         <a href="#nosotros">Quiénes somos</a>
-        <a href="">0 KM</a>
+        <a href="#0km">0 KM</a>
         <a href="usados.html">Usados</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -62,73 +60,81 @@
         <!-- En el article hacemos una descripción general de nuestros servicios -->
 
         <article class="bloque-izq">
-          <!-- Acá el article tiene 3 cajas, que las representamos con 3 div -->
+          <!-- Acá el article tiene 2 cajas, que las representamos con 2 div -->
 
-          <!-- Primer div títulos, va un título principal y un secundario con un lorem o ya con el texto real -->
+          <!-- Primer div títulos, va un título principal (h2) y un secundario (h3) con un lorem o ya con el texto real -->
 
           <div class="izq-titulo">
-            <h2>Nuestros servicios</h2>
+            <h2>
+              Nuestros servicios
+            </h2>
             <h3>
-              Necesitas vender tu auto? Queres comprar el mejor usado? Nosotros te ayudamos
-            </h3>
-            <h3>
-              Te asesoramos y acompañamos durante todo el proceso de obtencion de tu 0km
+              Necesitas vender tu auto? ¿Querés comprar el mejor usado? Nosotros te ayudamos.Te asesoramos y acompañamos durante todo el proceso de obtencion de tu 0km
             </h3>
           </div>
 
-          <!-- Segundo div una imagen alusiva de la Agencia de autos-->
+          <!-- Segundo div una imagen alusiva de la Agencia de autos y un párrafo-->
 
-          <div class="izq-img">
+          <div class="izq-img-parrafo">
+
             <img src="https://i0.wp.com/www.wynnslocksmiths.com.au/wp-content/uploads/2019/12/autokeys.jpg?fit=750%2C500&ssl=1"alt="Acá va imagen alusiva sobre la agencia de autos"/>
+
+            <p>
+              Con nuestro equipo de profesionales, tenes la seguridad que que siempre te vas a llevar lo mejor. Desde 1980 sólo clientes felices
+            </p>
+            
           </div>
 
           <!-- Tercer div un párrafo alusivo a la presentación de nuestros servicios -->
           <!-- El párrafo conviene ponerlo dentro de un div para un mejor control luego con css -->
          
-            <p class="izq-parrafo">
-              Con nuestro equipo de profesionales, tenes la seguridad que que siempre te vas a llevar lo mejor.
-              Desde 1980 sólo clientes felices
-            </p>
-          
         </article>
 
         <!-- Fin del article -->
 
         <!-- En el aside vamos a dar una breve síntesis complementaria de los servicios de autos 0KM y de usados -->
 
-        <aside class="bloque-der">
+        <aside class="aside-1">
+
           <!-- Una caja para el título principal con un div-->
 
-          <div class="der-titulo">
-            <h3>Acerca de nuestros autos 0KM y usados</h3>
+          <div class="aside-1-titulo">
+            <h2>Acerca de nuestros autos 0KM y usados</h2>
           </div>
 
           <!-- Para tener un mejor control ponemos a cada imagen en un div y al título secundario y al párrafo en otro div, como antes se usó h3 ahora se usa h4 -->
 
-          <div class="der-noticias">
-            <div class="noticias-img">
-            <img src="https://img.remediosdigitales.com/ab3010/suzuki-grand-vitara1/1366_2000.jpeg" alt="Foto de 0 0KM" />
-          </div>
+          <div class="aside-1-noticias">
 
-          <div class="noticias-textos">
-            <h4>Asesoramiento para obtencion de 0km</h4>
-            <p>Te ayudamos desde la elección del modelo, hasta el momento del patentamiento y de la entrega, gestión de documentación y te acompañamos en el proceso de los tramites legales posteriores a la entrega</p>
+            <div class="img">
+              <img src="https://img.remediosdigitales.com/ab3010/suzuki-grand-vitara1/1366_2000.jpeg" alt="Foto de 0 0KM" />
+            </div>
+
+            <div class="textos">
+              <h3>Asesoramiento para la obtencion de tu 0 km</h3>
+              <p>Te ayudamos desde la elección del modelo, hasta el momento del patentamiento y de la entrega, gestión de documentación y te acompañamos en el proceso de los tramites legales posteriores a la entrega</p>
+            </div>
+
           </div>
 
           <!-- Repetimos los mismos 2 div anteriores pero ahora para autos usados -->
-          </div>
-          <div class="der-noticias">
-            <div class="noticias-img">
-            <img src="https://img.olx.com.br/images/47/473439397707365.jpg" alt="Foto de auto usado" />
+
+          <div class="aside-1-noticias"">
+
+            <div class="img">
+              <img src="https://img.olx.com.br/images/47/473439397707365.jpg" alt="Foto de auto usado" />
+            </div>
+
+            <div class="textos">
+              <h3>Flota de autos usados</h3>
+              <p>Ofrecemos una amplia gama de vehiculos usados, de todo tipo y para cualquier presupuesto
+              Ofrecemos tambien planes de financiación</p>
+            </div>
+
           </div>
 
-          <div class="noticias-textos">
-            <h4>Flota de autos usados</h4>
-            <p>Ofrecemos una amplia gama de vehiculos usados, de todo tipo y para cualquier presupuesto
-              Ofrecemos tambien planes de financiación</p>
-          </div>
-          </div>
         </aside>
+
       </section>
 
       <!-- Fin sección 2 -->
@@ -293,50 +299,7 @@
 
       <!-- SECCION 4 --FOOTER -->
 
-      <!-- <section class="seccion-4">
-        <nav>
-          <a href="">Inicio</a>
-          <a href="">Quiénes somos</a>
-          <a href="">0 KM</a>
-          <a href="">Usados</a>
-          <a href="">Contacto</a>
-        </nav>
-
-        <div class="contenedor-s4">
-          <div class="textos-s4">
-            <h3>subtitulo</h3>
-            <a href="">Enlace 1</a>
-            <a href="">Enlace 2</a>
-            <a href="">Enlace 3</a>
-          </div>
-
-          <div class="textos-s4">
-            <h3>subtitulo</h3>
-            <a href="">Enlace 1</a>
-            <a href="">Enlace 2</a>
-            <a href="">Enlace 3</a>
-          </div>
-
-          <div class="textos-s4">
-            <h3>subtitulo</h3>
-            <a href="">Enlace 1</a>
-            <a href="">Enlace 2</a>
-            <a href="">Enlace 3</a>
-          </div>
-
-          <div class="textos-s4">
-            <h3>subtitulo</h3>
-            <a href="">Enlace 1</a>
-            <a href="">Enlace 2</a>
-            <a href="">Enlace 3</a>
-          </div>
-        </div>
-      </section> -->
-
-
-      <!-- Comienzo de nueva sección 4 -->
-
-        <section class="seccion-4">
+        <section class="seccion-4" id="0km">
 
           <!-- Defino un header de la sección 4 -->
 
